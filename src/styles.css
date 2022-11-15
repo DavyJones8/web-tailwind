@@ -55,5 +55,11 @@
 }
 
 @layer components {
-    
+    .menu-item {
+        @apply mx-5 tracking-wider flex-none xs:flex-1 xs:mx-0
+    }
+
+    .menu-item a {
+        @apply block transition duration-200 hover:text-secundario transform hover:scale-110
+    }
 }

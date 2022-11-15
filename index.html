@@ -10,26 +10,30 @@
 <body class="bg-body-pattern bg-scroll">
     <!-- HEADER INI -->
     <header id="header" class="
+        h-20
         bg-principal
         text-white
-        h-20
         bebas
+        xs:h-36
     ">
-        <div class="container mx-auto flex flex-row">
-            <div id="logo" class="flex-1">
+        <div class="container w-11/12 mx-auto xs:flex-col flex flex-row">
+            <div id="logo" class="xs:mx-auto flex-1">
                 <div class="
+                    group
                     w-64
-                    min-h-full
-                    py-0.5
+                    pt-0.5
+                    pb-0.5
+                    mt-4
+                    ml-6
                     bg-secundario
                     text-center
                     tracking-wider
                     cursor-pointer
-                    overflow-visible
+                    overflow-hidden
                     transition
                     duration-300
+                    rounded-xl
                     text-white
-                    rounded-md
                     hover:bg-oscuro
                 ">
                     <span class="
@@ -39,6 +43,8 @@
                         text-3xl
                         mt-1
                         ml-11
+                        animate-spin-low
+                        group-hover:animate-from-bellow
                     ">S</span>
                     <h3 class="
                         block
@@ -48,21 +54,22 @@
                         mr-16
                         transition
                         duration-100
-                    ">Tailwind Nacho</h3>
+                        group-hover:animate-from-right
+                    ">Tailwind</h3>
                 </div>
             </div>
             <nav class="flex-1">
-                <ul>
-                    <li>
-                        <a href="#">Inicio</a>
+                <ul class="flex flex-row h-20 items-center md:justify-end text-2xl xs:text-center mr-6">
+                    <li class="menu-item">
+                        <a href="#" class="">Inicio</a>
                     </li>
-                    <li>
+                    <li class="menu-item">
                         <a href="#">Blog</a>
                     </li>
-                    <li>
+                    <li class="menu-item">
                         <a href="#">Formación</a>
                     </li>
-                    <li>
+                    <li class="menu-item">
                         <a href="#">Contacto</a>
                     </li>
                 </ul>
@@ -70,5 +77,14 @@
         </div>
     </header>
     <!-- HEADER FIN -->
+    <!-- INFO INI -->
+    <section class="container w-11/12 mx-auto">
+        <!-- BANNER INI -->
+        <div id="banner" class="">
+            <h1>CURSOS DE DESARROLLO WEB</h1>
+        </div>
+        <!-- BANNER FIN -->
+    </section>
+    <!-- INFO FIN -->
 </body>
 </html>
